@@ -1,4 +1,13 @@
 {
+  "name": "cruise-ships",
+  "version": "1.0.0",
+  "description": "Project name: Cruise ships Decription: building and working with many objects that allow a cruise ship to operate",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
   }
