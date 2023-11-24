@@ -3,6 +3,9 @@ class Ship {
         this.startingPort = startingPort;
     }
    
+    setSail() {
+        this.startingPort = null;
+    }
 }
 
 module.exports = Ship
