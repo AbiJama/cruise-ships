@@ -1,8 +1,5 @@
 /* globals describe it expect */
 const Ship = require('../src/Ship.js');
-const Port = require('../src/Port.js');
-const Itinerary = require('../src/itinerary.js');
-
 
 describe('Ship', () => {
         let ship;
@@ -12,14 +9,14 @@ describe('Ship', () => {
 
         beforeEach(() => {
             dover = {
-                addShip: Jest.fn(),
+                addShip: jest.fn(),
                 removeShip: jest.fn(),
                 name: 'Dover',
                 ships: []
             };
 
             calais = {
-                addShip: Jest.fn(),
+                addShip: jest.fn(),
                 removeShip: jest.fn(),
                 name: 'Calais',
                 ships: []
@@ -27,8 +24,6 @@ describe('Ship', () => {
             itinerary = {
                 ports: [dover, calais]
             }
-
-            });
 
         ship = new Ship(itinerary);
     })
@@ -72,3 +67,4 @@ describe('Ship', () => {
 
         expect(() => ship.setSail()).toThrowError('End of itinerary reached');
     })
+});
