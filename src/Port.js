@@ -1,6 +1,6 @@
 class Port {
     constructor(name) {
-        this.Name = name
+        this.name = name
         this.ships = [];
     }
 

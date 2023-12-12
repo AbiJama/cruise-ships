@@ -16,12 +16,12 @@ describe('Port', () => {
 
     it('can be instantiated', () => {
 
-        expect(new Port()).toBeInstanceOf(Object);
+        expect(new Port()).toBeInstanceOf(Port);
     });
 
     it('port has a name',() => {
 
-        expect(port.Name).toBe('Dover');
+        expect(port.name).toBe('Dover');
     })
 
     it('can add a ship', () => {
